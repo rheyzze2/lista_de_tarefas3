@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Listas</h1>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu">
+            <a href="index.html">Início</a>
+            <a href="listas.html">Listas</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="galeria.html">Galeria</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Meus Hobbies</h2>
+        <ul>
+            <li>Ler</li>
+            <li>Desenhar</li>
+            <li>Jogar</li>
+            <li>Ouvir música</li>
+            <li>Caminhar</li>
+        </ul>
+        <h2>Receita de Pudim</h2>
+        <ol>
+            <li>Bata no liquidificador 1 lata de leite condensado, 1 lata de leite e 3 ovos.</li>
+            <li>Faça uma calda de açúcar e coloque em uma forma de pudim.</li>
+            <li>Despeje a mistura do liquidificador na forma.</li>
+            <li>Cubra com papel alumínio e leve ao forno em banho-maria por cerca de 1 hora e 30 minutos.</li>
+            <li>Deixe esfriar, desenforme e sirva gelado.</li>
+        </ol>
+        <a href="https://www.google.com">Google</a>
+        <a href="https://www.youtube.com">YouTube</a>
+        <a href="https://www.wikipedia.org">Wikipedia</a>
+    </main>
+    <footer>
+        <p>2024 - Meu site</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html> 

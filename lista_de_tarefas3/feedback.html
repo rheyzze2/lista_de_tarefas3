@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Feedback</h1>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu">
+            <a href="index.html">Início</a>
+            <a href="listas.html">Listas</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="galeria.html">Galeria</a>
+        </nav>
+    </header>
+    <main>
+        <form>
+            Nome:<br>
+            <input type="text" name="nome"><br><br>
+            E-mail:<br>
+            <input type="email" name="email"><br><br>
+            Endereço:<br>
+            <input type="text" name="endereco"><br><br>
+            Tipo de feedback:<br>
+            <select name="tipo">
+                <option>Elogio</option>
+                <option>Sugestão</option>
+                <option>Crítica</option>
+            </select><br><br>
+            Feedback:<br>
+            <textarea name="feedback"></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>2024 - Meu site</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html> 

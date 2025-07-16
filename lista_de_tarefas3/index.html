@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Página</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Página</h1>
+        <p>Bem-vindo ao meu site.</p>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu">
+            <a href="index.html">Início</a>
+            <a href="listas.html">Listas</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="galeria.html">Galeria</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Missão</h2>
+        <p>Minha missão é aprender HTML.</p>
+        <h2>Visão</h2>
+        <p>Minha visão é ser um bom programador.</p>
+    </main>
+    <footer>
+        <p>2024 - Meu site</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html> 

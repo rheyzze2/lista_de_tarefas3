@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Galeria</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Galeria</h1>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <nav class="nav-menu">
+            <a href="index.html">Início</a>
+            <a href="listas.html">Listas</a>
+            <a href="feedback.html">Feedback</a>
+            <a href="galeria.html">Galeria</a>
+        </nav>
+    </header>
+    <main>
+        <div class="galeria-container">
+            <div class="galeria-grid">
+                <figure>
+                    <img src="fotos/imagem1.jpg" alt="Michael Jackson - Discos">
+                    <figcaption>Michael Jackson - Bad, Dangerous, Off the Wall e Thriller</figcaption>
+                </figure>
+                <figure>
+                    <img src="fotos/imagem2.jpg" alt="Max Verstappen Hepta">
+                    <figcaption>Max Verstappen - Hepta Campeonato F1</figcaption>
+                </figure>
+                <figure>
+                    <img src="fotos/imagem3.jpg" alt="Itachi">
+                    <figcaption>Itachi</figcaption>
+                </figure>
+                <figure>
+                    <img src="fotos/imagem4.jpg" alt="Sasori vs Chiyo e Sakura" class="sasori-img">
+                    <figcaption>Sasori na luta contra Chiyo e Sakura</figcaption>
+                </figure>
+                <figure>
+                    <img src="fotos/imagem5.jpg" alt="Castlevania Symphony of the Night">
+                    <figcaption>Castlevania Symphony of the Night</figcaption>
+                </figure>
+                <figure>
+                    <img src="fotos/imagem6.jpg" alt="Programação">
+                    <figcaption>Programação</figcaption>
+                </figure>
+                <figure>
+                    <img src="fotos/imagem7.jpg" alt="PlayStation 1">
+                    <figcaption>PlayStation 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="fotos/imagem8.jpg" alt="Final Fantasy 7">
+                    <figcaption>Final Fantasy 7</figcaption>
+                </figure>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>2024 - Meu site</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+</html> 
